@@ -1,3 +1,5 @@
+import data from "../JAVA/Index.Json" assert { type: "json" }
+
 let slideIndex = 0;
 showSlides();
 
