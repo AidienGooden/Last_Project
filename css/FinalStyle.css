@@ -7,70 +7,53 @@
 }
 
 .Bait {
-  margin-left: 110px;
+  margin-left: 50px;;
+  margin-right: 50px;
   font-size: 25px;
   margin-top: 15px;
   margin-bottom: 60px;
+  text-align: center;
 }
 
 .Header_Hotel {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 65px;
-  margin-right: 490px;
   margin-bottom: 20px;
   color: #c00424;
 }
 
 .Header_Food {
-  font-size: 65px;
-  margin-right: 835px;
-  margin-bottom: 20px;
-  color: #000000;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 55px;
+  color: #c00424;
+  margin-top: 20px;
 }
 
 .Hotel_H1 {
-  font-size: 40px;
-  margin-right: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 65px;
   margin-bottom: 20px;
   color: #c00424;
 }
 
 .Header_Fun {
-  font-size: 65px;
-  margin-left: 200px;
+  text-align: center;
+  margin-left: auto;
   margin-right: auto;
+  font-size: 65px;
+  margin-bottom: 20px;
   color: #c00424;
 }
 
-
 /*NAVABAR***************************************************************************************************************/
-.navbar {
-  background: #131313;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  font-size: 1.2rem;
-  top: 0;
-  z-index: 999;
-  width: 2000px;
-}
-
-.navbar_container {
-  display: flex;
-  justify-content: space-between;
-  height: 80px;
-  width: 100%;
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 50px;
-  z-index: 1;
-  margin-right: 950px;
-}
-
-.navbar_menu {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  /*same as text-decoration:none;*/
+#menuList {
+  margin-left: 300px;
 }
 
 .navbar_item {
@@ -88,40 +71,14 @@
   transition: all 0.3s ease;
 }
 
-.navbar_button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 1rem;
-  width: 100%;
-}
-
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  padding: 10px 20px;
-  height: 100%;
-  width: 100%;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  background: #833ab4;
-  color: #fff;
-}
-
-.Section_Overview {
-  background: -webkit-linear-gradient(to bottom, #ffffff);
-  background: linear-gradient(to top, #ffffff, );
-}
-
 .card_7 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 5px;
   margin-bottom: 30px;
+  width: 500px;
 }
 
 .card_7:hover {
@@ -379,6 +336,7 @@ body {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   margin-bottom: 50px;
+  width: 750px;
 }
 
 .Activities {
@@ -511,7 +469,8 @@ ul {
 }
 
 .Home_wide {
-  margin-left: 200px;
+  margin-left: auto;
+  margin-right: auto;
   width: 400px;
   color: #c00424;
   padding-bottom: 0;
@@ -585,7 +544,9 @@ img {
   margin-bottom: 10px;
   color: #0617b3;
   font-size: 35px;
-
+  margin-left: auto;
+  margin-right: auto;
+margin-left: 500px;
 }
 
 .Manchester {
@@ -698,8 +659,8 @@ tabs.container {
 
 .tab-content2 {
   padding: 2rem 0;
-  width: 2000px;
 }
+
 .tab-content {
   padding: 3rem 0;
 }
@@ -823,65 +784,79 @@ tabs.container {
 }
 
 
-nav{
+nav {
   padding: 10px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #004274;
+  background: #000000;
   position: relative;
   height: 70px;
 }
 
-.logo{
+.logo {
   color: #fff;
 }
 
-nav ul{
+nav ul {
   display: flex;
   gap: 30px;
   align-items: center;
 }
 
-nav ul li{
+nav ul li {
   list-style-type: none;
 }
 
-nav ul li a{
+nav ul li a {
   text-decoration: none;
   color: #fff;
 }
 
-.menu-icon{
+.menu-icon {
   display: none;
 }
 
-.menu-icon i{
+.menu-icon i {
   color: #fff;
   font-size: 30px;
 }
 
-@media (max-width:600px) {
-  nav ul{
-      position: absolute;
-      top: 70px;
-      left: 0;
-      right: 0;
-      flex-direction: column;
-      text-align: center;
-      background: #004274;
-      gap: 0;
-      overflow: hidden;
+@media (max-width:1000px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    background: #000000;
+    gap: 0;
+    overflow: hidden;
   }
-  nav ul li{
-      padding: 20px;
-      padding-top: 0;
+
+  nav ul li {
+    padding: 20px;
+    padding-top: 0;
   }
-  .menu-icon{
-      display: block;
+
+  .menu-icon {
+    display: block;
   }
-  #menuList{
-      transition: all 0.5s;
+
+  #menuList {
+    position: absolute;
+    z-index: 999;
+    transition: all 0.5s;
+  }
+
+  .Fun_h2{
+    margin-left: 60px;
+    width: 600px;
+    font-size: 30px;
+  }
+  .card_7{
+    width: 400px;
   }
 }
 
@@ -920,8 +895,8 @@ nav ul li a{
 
 @media (max-width: 1000px) {
   .showcase::after {
-    background: rgba(0, 0, 0, 0.6);
-    box-shadow: inset 80px 80px 150px #000000, inset -80px -80px 150px #000000;
+   
+   
   }
 
   .showcase-content h1 {
@@ -958,85 +933,99 @@ nav ul li a{
     margin-top: 3rem;
   }
 }
-@media screen and (max-width:1000px){
+
+@media screen and (max-width:1000px) {
+
   /*Responsive Styling for Navbar*/
-  .navbar_container{
-      display:flex;
-      justify-content: space-between;
-      height: 5rem;
-      z-index: 1;
-      max-width: 1000px;
-      padding:0;
+  .navbar_container {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    z-index: 1;
+    max-width: 1000px;
+    padding: 0;
   }
-  .navbar_menu{
-      display: grid;
-      grid-template-columns: auto;
-      margin:0;
-      width:100%;
-      position: absolute;
-      top:-1000px;
-      opacity:1;
-      transition: all .5s ease;
-      z-index:-1;
+
+  .navbar_menu {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: -1000px;
+    opacity: 1;
+    transition: all .5s ease;
+    z-index: -1;
   }
-  .navbar_menu.active{
-      background: #ebe8e8;
-      top:100%;
-      opacity: 1;
-      transition:all .3s ease;
-      z-index:99;
-      height: 60vh;
-      font-size: 1.6rem;
+
+  .navbar_menu.active {
+    background: #ebe8e8;
+    top: 100%;
+    opacity: 1;
+    transition: all .3s ease;
+    z-index: 99;
+    height: 60vh;
+    font-size: 1.6rem;
   }
-  #navbar_logo{
-      padding-left: 25px;
+
+  #navbar_logo {
+    padding-left: 25px;
   }
-  .navbar_item{
-      width:100%;
+
+  .navbar_item {
+    width: 100%;
   }
-  .navbar_link{
-      text-align: center;
-      padding: 2rem;
-      width:100%;
-      display: table;
+
+  .navbar_link {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
   }
-  .navbar_button{
-      padding-bottom: 2rem;
+
+  .navbar_button {
+    padding-bottom: 2rem;
   }
-  .button{
-      display:flex;
-      justify-content:center;
-      align-items: center;
-      width:80%;
-      height:80%;
-      margin:0;
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    margin: 0;
   }
+
   /*mobile styling for JS functionality*/
-  #mobile-menu{
-      position: absolute;
-      top:20%;
-      right:5%;
-      transform: translate(5%, 20%);
+  #mobile-menu {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%);
   }
-  .navbar_toggle .bar{
-      width:25px;
-      height:4px;
-      margin: 5px auto;
-      transition: all .5s ease-in-out;
-      display: block;
-      cursor: pointer;
-      background: #fff;
+
+  .navbar_toggle .bar {
+    width: 25px;
+    height: 4px;
+    margin: 5px auto;
+    transition: all .5s ease-in-out;
+    display: block;
+    cursor: pointer;
+    background: #fff;
   }
-  
-  #mobile-menu.is-active .bar:nth-child(2){
-      opacity:0;
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
   }
-  #mobile-menu.is-active .bar:nth-child(1){
-      transform: translateY(9px) rotate(45deg);
+
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
   }
-  #mobile-menu.is-active .bar:nth-child(3){
-      transform: translateY(-9px) rotate(-45deg);
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
   }
+
   .footer_link_wrapper {
     flex-direction: column;
   }

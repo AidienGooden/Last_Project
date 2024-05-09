@@ -9,75 +9,39 @@
 </head>
 
 <body class="Activities_body_Home">
-
-
     <nav>
-        <div class="logo">
-            <h1>Logo</h1>
-        </div>
         <ul id="menuList">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Product</a></li>
-            <li><a href="">Contact</a></li>
+            <li class="navbar_item">
+                <a href="Home.html" class="navbar_link" id="home-page">
+                    Home
+                </a>
+            </li>
+            <Li class="navbar_item">
+                <a href="Activites.html" class="navbar_link" id="services-page">
+                    Activities
+                </a>
+            </Li>
+            <Li class="navbar_item">
+                <a href="Restaurants.html" class="navbar_link" id="services-page">
+                    Food
+                </a>
+            </Li>
+            <li class="navbar_item">
+                <a href="Hotel.html" class="navbar_link" id="home-page">
+                    Hotels
+                </a>
+            </li>
+            <li class="navbar_item">
+                <a href="Cota.html" class="navbar_link" id="about-page">
+                    Transportation
+                </a>
+            </li>
         </ul>
         <div class="menu-icon" onclick="toggleMenu()">
             <i class="fa-solid fa-bars"></i>
         </div>
     </nav>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
-    <nav class="navbar">
-        <div class="navbar_container">
-            <a href="#" id="navbar_logo"><i class="fa-solid fa-hotel"></i></i>&nbsp;&nbsp;</a>
-            <div class="navbar_toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar_menu">
-                <li class="navbar_item">
-                  <a href="Home.html" class="navbar_link" id="home-page">
-                    Home
-                  </a>
-                </li>
-                <Li class="navbar_item">
-                  <a href="Activites.html" class="navbar_link" id="services-page">
-                    Activities
-                  </a>
-                </Li>
-                <Li class="navbar_item">
-                  <a href="Restaurants.html" class="navbar_link" id="services-page">
-                    Food
-                  </a>
-                </Li>
-                <li class="navbar_item">
-                  <a href="Hotel.html" class="navbar_link" id="home-page">
-                    Hotels
-                  </a>
-                </li>
-                <li class="navbar_item">
-                  <a href="Cota.html" class="navbar_link" id="about-page">
-                    Transportation
-                  </a>
-                </li>
-            </ul>
-        </div>
-    </nav> -->
     <header class="showcase">
         <p class="showcase_Text">Welcome to Columbus</p>
     </header>
@@ -94,46 +58,45 @@
         suburbs and surrounding towns with a unique feel and an authentic vibe all their own.
     </p>
     <hr>
-    <section class="Section_Overview">
-        <section class="tab-content2">
-            <div class="container">
-                <div id="tab-1-content" class="tab-content-item show">
-                    <div class="tab-1-content-inner">
-                        <div>
 
-                            <h2 class="Home_wide">Columbus Ohio 9 districts</h2>
-                            <p class="Wide">The City of Columbus now has nine districts, nine council members, and a
-                                hybrid at-large system. Click below to view the map and find your district.
+    <section class="tab-content2">
+        <div class="container">
+            <h2 class="Home_wide">Columbus Ohio 9 districts</h2>
+            <p class="Wide">The City of Columbus now has nine districts, nine council members, and a
+                hybrid at-large system. Click below to view the map and find your district.
 
-                            </p>
+            </p>
+            <div id="tab-1-content" class="tab-content-item show">
+                <div class="tab-1-content-inner">
+                    <div>
 
-                            <img class="District_1" src="../Img/New.webp" alt=""><a href="https://columbus.maps.arcgis.com/apps/webappviewer/index.html?id=7db35f3529294a6d8
+                        <img class="District_1" src="../Img/New.webp" alt=""><a href="https://columbus.maps.arcgis.com/apps/webappviewer/index.html?id=7db35f3529294a6d8
                         eaff9dac0958189"></a>
-                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <hr>
-        <section class="tab-content">
-            <div class="container">
-                <div id="tab-1-content" class="tab-content-item show">
-                    <div class="tab-1-content-inner">
-                        <div>
-                            <h2 class="Home_wide2">Meet The Mayor</h2>
-                            <p class="Wide2">
-                                Mayor Andrew J. Ginther is serving his second term as the 53rd mayor of the City of
-                                Columbus, Under his leadership, Columbus has been named “America’s Opportunity City”
-                                while
-                                setting new records for job creation and population growth
-                            </p>
-                        </div>
-                        <img src="../Img/mayorginther.jpg" alt="Mayor "/>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
     </section>
+    <hr>
+    <section class="tab-content">
+        <div class="container">
+            <div id="tab-1-content" class="tab-content-item show">
+                <div class="tab-1-content-inner">
+                    <div>
+                        <h2 class="Home_wide2">Meet The Mayor</h2>
+                        <p class="Wide2">
+                            Mayor Andrew J. Ginther is serving his second term as the 53rd mayor of the City of
+                            Columbus, Under his leadership, Columbus has been named “America’s Opportunity City”
+                            while
+                            setting new records for job creation and population growth
+                        </p>
+                    </div>
+                    <img src="../Img/mayorginther.jpg" alt="Mayor " />
+                </div>
+            </div>
+        </div>
+    </section>
+
     <hr>
     <div class="footer_container">
         <div class="footer_links"><!--links section-->
@@ -151,12 +114,6 @@
                     <a href="#">Support</a>
                     <a href="#">Locations</a>
                 </div>
-                <div class="footer_link_items"><!-- link group 3-->
-                    <h2>Videos</h2>
-                    <a href="#">Submit Video</a>
-                    <a href="#">Ambassadors</a>
-                    <a href="#">Visitors</a>
-                </div>
                 <div class="footer_link_items"><!-- link group 4-->
                     <h2>Social Media</h2>
                     <a href=".">Facespace</a>
@@ -170,4 +127,5 @@
     <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
 </body>
 <script src="../JAVA/Final.js"></script>
+
 </html>

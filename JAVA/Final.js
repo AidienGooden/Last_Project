@@ -1,23 +1,23 @@
 
 let slideIndex = 0;
-showSlides();
+// showSlides();
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) { slideIndex = 1 }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
+// function showSlides() {
+//   let i;
+//   let slides = document.getElementsByClassName("mySlides");
+//   let dots = document.getElementsByClassName("dot");
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+//   }
+//   slideIndex++;
+//   if (slideIndex > slides.length) { slideIndex = 1 }
+//   for (i = 0; i < dots.length; i++) {
+//     dots[i].className = dots[i].className.replace(" active", "");
+//   }
+//   slides[slideIndex - 1].style.display = "block";
+//   dots[slideIndex - 1].className += " active";
+//   setTimeout(showSlides, 2000); // Change image every 2 seconds
+// }
 
 
 const tabItems = document.querySelectorAll('.tab-item');
@@ -74,16 +74,16 @@ function off() {
 
 
 
-menuList = document.getElementById("menuList")
-menuList.style.maxHeight = "0px";
+let menuList = document.getElementById("menuList");
+menuList.style.height = "0px";
 
 function toggleMenu() {
   let menuList = document.getElementById("menuList")
-  if (menuList.style.maxHeight == "0px") {
-    menuList.style.maxHeight = "300px";
+  if (menuList.style.height == "0px") {
+    menuList.style.height = "400px";
   }
   else {
-    menuList.style.maxHeight = "0px";
+    menuList.style.height = "0px";
   }
 }
-window.addEventListener('click', toggleMenu);
+// window.addEventListener('click', toggleMenu);
