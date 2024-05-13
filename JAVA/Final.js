@@ -52,9 +52,7 @@ function removeShow() {
 tabItems.forEach(item => {
   item.addEventListener('click', selectItem);
 });
-
-
-
+/********************************************************************** */
 function on() {
   document.getElementById("overlay").style.display = "block";
 }
@@ -62,16 +60,6 @@ function on() {
 function off() {
   document.getElementById("overlay").style.display = "none";
 }
-
-
-
-
-
-
-
-
-
-
 
 
 let menuList = document.getElementById("menuList");
@@ -87,3 +75,40 @@ function toggleMenu() {
   }
 }
 // window.addEventListener('click', toggleMenu);
+/************************************************************************** */
+//create XMLHTTPREQUEST object
+let xhr = new XMLHttpRequest();
+
+//when state of reuest changes
+xhr.onload = function () {
+
+    // if server response === 'ok', create some HTML
+    if (xhr.status === 200) {
+
+        let responseObject = JSON.parse(xhr.responseText)
+
+        console.log(responseObject)
+        let newCard = ''; // String object to hold "card" info and layout
+
+        // loop through responseObject to obtain all elements
+        //and data to add to the "card" on the webpage
+
+        for (let i = 0; i <responseObject.Activities.length; i++) {
+            newCard += "<div class ='Activities'>"
+            newCard += "<img src='" + responseObject.Activities[i].Image + "'"
+            newCard +=  "<h3>" + responseObject.Activities[i].Name + "<h3/>"
+            newCard += responseObject.Activities[i].Link + "</a></a>"
+            newCard += "</div>"
+        }
+        //add new card content to  the webpage
+        document.getElementById('content').innerHTML = newCard
+    }
+
+}
+
+
+
+//prepare the request 
+xhr.open('GET', '../JAVA/Index.Json', true)
+//send the request--  argument and send will always be(null)
+xhr.send(null)

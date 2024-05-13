@@ -357,7 +357,7 @@ body {
 }
 
 .Activities:hover {
-  color: var(--white);
+  color: var(--black);
   background: var(--red);
 }
 
@@ -371,6 +371,7 @@ body {
   max-width: 85%;
 }
 
+
 .Activities .card-link-wrapper {
   margin-top: auto;
 }
@@ -378,7 +379,7 @@ body {
 .Activities .card-link {
   display: inline-block;
   text-decoration: none;
-  color: white;
+  color: rgb(3, 1, 1);
   background: var(--red);
   padding: 6px 12px;
   border-radius: 8px;
