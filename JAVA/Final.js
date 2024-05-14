@@ -94,11 +94,11 @@ xhr.onload = function () {
         //and data to add to the "card" on the webpage
 
         for (let i = 0; i <responseObject.Activities.length; i++) {
-            newCard += "<div class ='Activities'>"
-            newCard += "<img src='" + responseObject.Activities[i].Image + "'"
+            newCard += "<li class ='Activities'>"
+            newCard += "<img style='width:300px' src='" + responseObject.Activities[i].Image + "'"
             newCard +=  "<h3>" + responseObject.Activities[i].Name + "<h3/>"
-            newCard += responseObject.Activities[i].Link + "</a></a>"
-            newCard += "</div>"
+            newCard += "<a>" + responseObject.Activities[i].Link +  "</a>"
+            newCard += "</li>"
         }
         //add new card content to  the webpage
         document.getElementById('content').innerHTML = newCard

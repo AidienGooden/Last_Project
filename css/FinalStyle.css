@@ -351,14 +351,28 @@ body {
   scroll-snap-align: start;
   transition: all 0.2s;
 }
+#Activities {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 100%;
+  padding: 20px;
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+  scroll-snap-align: start;
+  transition: all 0.2s;
+}
+
 
 .Activities:not(:last-child) {
   margin-right: 10px;
 }
-
+.Activities h3{
+  color: #c00424;
+ }
 .Activities:hover {
   color: var(--black);
-  background: var(--red);
+  background: var(--darkred);
 }
 
 .Activities .card-title {
