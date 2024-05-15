@@ -82,33 +82,64 @@ let xhr = new XMLHttpRequest();
 //when state of reuest changes
 xhr.onload = function () {
 
-    // if server response === 'ok', create some HTML
-    if (xhr.status === 200) {
+  // if server response === 'ok', create some HTML
+  if (xhr.status === 200) {
 
-        let responseObject = JSON.parse(xhr.responseText)
+    let responseObject = JSON.parse(xhr.responseText)
 
-        console.log(responseObject)
-        let newCard = ''; // String object to hold "card" info and layout
+    console.log(responseObject)
+    let newCard = ''; // String object to hold "card" info and layout
 
-        // loop through responseObject to obtain all elements
-        //and data to add to the "card" on the webpage
+    // loop through responseObject to obtain all elements
+    //and data to add to the "card" on the webpage
 
-        for (let i = 0; i <responseObject.Activities.length; i++) {
-            newCard += "<li class ='Activities' style='width:330px'>"
-            newCard += "<a href='" + responseObject.Activities[i].Link +  "'>"
-            //put anchor tag for the href of site linking to
-            newCard += "<img  style='height:250px'src='" + responseObject.Activities[i].Image + "'>"
-            newCard +=  "<h3>" + responseObject.Activities[i].Name + "</h3>"
-            newCard += "</a>"
-            newCard += "</li>"
-        }
-        //add new card content to  the webpage
-        document.getElementById('content').innerHTML += newCard
+    for (let i = 0; i < responseObject.Restaurants.length; i++) {
+      newCard += "<li class ='Activities' style='width:530px'>"
+      newCard += "<a href='" + responseObject.Restaurants[i].Link + "'>"
+      //put anchor tag for the href of site linking to
+      newCard += "<img  style='height: 250px; width: 300px; cover/center'src='" + responseObject.Restaurants[i].Image + "'>"
+      newCard += "<h3>" + responseObject.Restaurants[i].Name + "</h3>"
+      newCard += "</a>"
+      newCard += "</li>"
     }
-
+    for (let i = 0; i < responseObject.Hotels.length; i++) {
+      newCard += "<li class ='Activities' style='width:530px'>"
+      newCard += "<a href='" + responseObject.Hotels[i].Link + "'>"
+      //put anchor tag for the href of site linking to
+      newCard += "<img  style='height: 250px; width: 300px; cover/center'src='" + responseObject.Hotels[i].Image + "'>"
+      newCard += "<h3>" + responseObject.Hotels[i].Name + "</h3>"
+      newCard += "</a>"
+      newCard += "</li>"
+    }
+    document.getElementById('content').innerHTML += newCard
+  
+  }
 }
-
-//prepare the request 
 xhr.open('GET', '../JAVA/Index.Json', true)
 //send the request--  argument and send will always be(null)
 xhr.send(null)
+
+
+// for (let i = 0; i < responseObject.Activities.length; i++) {
+//   newCard += "<li class ='Activities' style='width:530px'>"
+//   newCard += "<a href='" + responseObject.Activities[i].Link + "'>"
+//   //put anchor tag for the href of site linking to
+//   newCard += "<img  style='height: 250px; width: 300px; cover/center'src='" + responseObject.Activities[i].Image + "'>"
+//   newCard += "<h3>" + responseObject.Activities[i].Name + "</h3>"
+//   newCard += "</a>"
+//   newCard += "</li>"
+// }
+// for (let i = 0; i < responseObject.Activities.length; i++) {
+//   newCard += "<li class ='Activities' style='width:530px'>"
+//   newCard += "<a href='" + responseObject.Activities[i].Link + "'>"
+//   //put anchor tag for the href of site linking to
+//   newCard += "<img  style='height: 250px; width: 300px; cover/center'src='" + responseObject.Activities[i].Image + "'>"
+//   newCard += "<h3>" + responseObject.Activities[i].Name + "</h3>"
+//   newCard += "</a>"
+//   newCard += "</li>"
+// }
+
+//add new card content to  the webpage
+
+//prepare the request 
+//Restaurants
