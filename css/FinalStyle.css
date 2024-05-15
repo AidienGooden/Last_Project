@@ -7,7 +7,8 @@
 }
 
 .Bait {
-  margin-left: 50px;;
+  margin-left: 50px;
+  ;
   margin-right: 50px;
   font-size: 25px;
   margin-top: 15px;
@@ -351,6 +352,7 @@ body {
   scroll-snap-align: start;
   transition: all 0.2s;
 }
+
 #Activities {
   display: flex;
   flex-direction: column;
@@ -367,9 +369,11 @@ body {
 .Activities:not(:last-child) {
   margin-right: 10px;
 }
-.Activities h3{
+
+.Activities h3 {
   color: #c00424;
- }
+}
+
 .Activities:hover {
   color: var(--black);
   background: var(--darkred);
@@ -388,6 +392,11 @@ body {
 
 .Activities .card-link-wrapper {
   margin-top: auto;
+}
+
+#content {
+  margin: 25px;
+  font-size: 25px;
 }
 
 .Activities .card-link {
@@ -562,7 +571,7 @@ img {
   font-size: 35px;
   margin-left: auto;
   margin-right: auto;
-margin-left: 500px;
+  margin-left: 500px;
 }
 
 .Manchester {
@@ -866,15 +875,17 @@ nav ul li a {
     transition: all 0.5s;
   }
 
-  .Fun_h2{
+  .Fun_h2 {
     margin-left: 60px;
     width: 600px;
     font-size: 30px;
   }
-  .card_7{
+
+  .card_7 {
     width: 400px;
   }
 }
+
 /*****************************************************/
 
 .cards-list {
@@ -884,7 +895,8 @@ nav ul li a {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.h1_cota{
+
+.h1_cota {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -893,13 +905,14 @@ nav ul li a {
   margin-top: 100px;
   margin-bottom: 35px;
 }
-.Showcase_Bus{
+
+.Showcase_Bus {
   margin-bottom: 40px;
   width: 100%;
   height: 100vh;
   position: relative;
   background: url("../Img/Bus.jfif") center/cover;
-  
+
 }
 
 .card_Cota {
@@ -907,11 +920,12 @@ nav ul li a {
   width: 300px;
   height: 300px;
   border-radius: 40px;
-  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
   cursor: pointer;
   transition: 0.4s;
 }
-.Cota_Header{
+
+.Cota_Header {
   margin-left: auto;
   margin-right: auto;
   width: 600px;
@@ -920,11 +934,13 @@ nav ul li a {
   margin-top: 10px;
   margin-bottom: 35px;
 }
+
 .card_Cota .card_image {
   width: inherit;
   height: inherit;
   border-radius: 40px;
 }
+
 /* /* .showcase {
   margin-top: -10px;
   margin-bottom: 40px;
@@ -933,11 +949,11 @@ nav ul li a {
   position: relative;
   background: url("../Img/New_Ohio.jpg") center/cover;
    /original card imgae*/
-   /* width: inherit;
+/* width: inherit;
   height: inherit;
   border-radius: 40px;
   object-fit: cover; */
-/* }  */ 
+/* }  */
 
 .card_Cota .card_image img {
   margin-top: -10px;
@@ -960,8 +976,8 @@ nav ul li a {
 
 .card_Cota:hover {
   transform: scale(0.9, 0.9);
-  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-    -5px -5px 30px 15px rgba(0,0,0,0.22);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
 }
 
 .title-white {
@@ -978,6 +994,7 @@ nav ul li a {
     flex-direction: column;
 
   }
+
   .card_Cota .card_image img {
     margin-top: -10px;
     margin-bottom: 40px;
@@ -986,14 +1003,16 @@ nav ul li a {
     height: 45vh;
     position: relative;
   }
-  .Cota_Header{
+
+  .Cota_Header {
     margin-left: auto;
     margin-right: auto;
     color: #c00424;
     padding-bottom: 0;
     margin-top: 10px;
   }
-  .h1_cota{
+
+  .h1_cota {
     margin-left: auto;
     margin-right: auto;
     width: 450px;
@@ -1035,14 +1054,51 @@ nav ul li a {
 }
 
 @media (max-width: 1000px) {
-  .showcase::after {
-   
-   
-  }
+  .showcase::after {}
 
   .showcase-content h1 {
     font-size: 2.5rem;
     line-height: 1;
+  }
+
+  .Home_wide {
+    margin-left: 100px;
+    margin-right: auto;
+    color: #c00424;
+    padding-bottom: 0;
+    margin-top: 10px;
+  }
+
+  .Wide {
+    margin-left: 40px;
+    margin-right: auto;
+    width: 400px;
+    color: #c00424;
+    padding-bottom: 0;
+    margin-top: 10px;
+  }
+
+  .District_1 {
+    margin-left: -350px;
+    width: 100%;
+    height: 80vh;
+  }
+
+  .Home_wide2 {
+    margin-left: 100px;
+    margin-right: auto;
+    color: #c00424;
+    padding-bottom: 0;
+    margin-top: 10px;
+  }
+
+  .Wide2 {
+    margin-left: 40px;
+    margin-right: auto;
+    width: 400px;
+    color: #c00424;
+    padding-bottom: 0;
+    margin-top: 10px;
   }
 
   .showcase-content p {

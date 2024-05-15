@@ -94,19 +94,19 @@ xhr.onload = function () {
         //and data to add to the "card" on the webpage
 
         for (let i = 0; i <responseObject.Activities.length; i++) {
-            newCard += "<li class ='Activities'>"
-            newCard += "<img style='width:300px' src='" + responseObject.Activities[i].Image + "'"
-            newCard +=  "<h3>" + responseObject.Activities[i].Name + "<h3/>"
-            newCard += "<a>" + responseObject.Activities[i].Link +  "</a>"
+            newCard += "<li class ='Activities' style='width:330px'>"
+            newCard += "<a href='" + responseObject.Activities[i].Link +  "'>"
+            //put anchor tag for the href of site linking to
+            newCard += "<img  style='height:250px'src='" + responseObject.Activities[i].Image + "'>"
+            newCard +=  "<h3>" + responseObject.Activities[i].Name + "</h3>"
+            newCard += "</a>"
             newCard += "</li>"
         }
         //add new card content to  the webpage
-        document.getElementById('content').innerHTML = newCard
+        document.getElementById('content').innerHTML += newCard
     }
 
 }
-
-
 
 //prepare the request 
 xhr.open('GET', '../JAVA/Index.Json', true)
