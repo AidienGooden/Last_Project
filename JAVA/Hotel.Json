@@ -1,0 +1,55 @@
+{
+
+    "Hotel": [
+    {
+        "Image": "../Img/logoLEVEQUE - Copy.png",
+        "Name": "Hotel LeVeque, Autograph Collection",
+        "Link": "https://www.hotellevequecolumbus.com/"
+    },
+    {
+        "Image": "../Img/Hilton_logo.jpg",
+        "Name": "Hilton Columbus at Easton",
+        "Link": "https://www.hiltoncolumbus.com/"
+    },
+    {
+        "Image": "../Img/MemLogo_HAMPTON_PNG_COLOR_1669X1066.png",
+        "Name": "Hampton Inn & Suites ",
+        "Link": "https://www.hilton.com/en/hotels/cmhhshx-hampton-suites-columbus-downtown/"
+    },
+    {
+        "Image": "../Img/logoBlack.png",
+        "Name": "The Blackwell",
+        "Link": "https://www.theblackwell.com/"
+    },
+    {
+        "Image": "../Img/Drury_logo.png",
+        "Name": "Drury Plaza Hotel",
+        "Link": "https://www.druryhotels.com/locations/columbus-oh/drury-plaza-hotel-columbus-downtown"
+    },
+    {
+        "Image": "../Img/MemLogo_HAMPTON_PNG_COLOR_1669X1066.png",
+        "Name": "Hampton Inn & Suites University Area",
+        "Link": "https://www.hilton.com/en/hotels/cmhunhx-hampton-suites-columbus-university-area/ "
+    },
+    {
+        "Image": "../Img/Hilton_logo.jpg",
+        "Name": "Hilton Columbus Downtown",
+        "Link": "https://www.hilton.com/en/hotels/cmhdwhh-hilton-columbus-downtown/"
+    },
+    {
+        "Image": "../Img/le_meridien_columbus_the_joseph_logo.jfif",
+        "Name": "Le Méridien Columbus, The Joseph",
+        "Link": "https://www.marriott.com/en-us/hotels/cmhdm-le-meridien-columbus-the-joseph/overview/"
+    },
+    {
+        "Image": "../Img/Urban.png",
+        "Name": "The Urban",
+        "Link": "https://theurbancolumbus.com/"
+    },
+    {
+        "Image": "../Img/moxy-logo.jpg",
+        "Name": "Moxy Hotel Short North",
+        "Link": "https://www.marriott.com/en-us/hotels/cmhox-moxy-columbus-short-north/overview/"
+    }
+  ]
+}

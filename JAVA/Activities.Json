@@ -1,0 +1,54 @@
+{
+"Activities": [
+    {
+        "Image": "../Img/Cedar_point.png",
+        "Name": "Cedar Point",
+        "Link": "https://www.cedarpoint.com/"
+    },
+    {
+        "Image": "../Img/FPConservatory.jpg",
+        "Name": "Franklin Park Conservatory and Botanical Gardens",
+        "Link": "https://www.fpconservatory.org/"
+    },
+    {
+        "Image": "../Img/zoombezi_logo.png",
+        "Name": "Zoombezi bay",
+        "Link": "https://www.zoombezibay.com/"
+    },
+    {
+        "Image": "../Img/COSI.png",
+        "Name": "COSI",
+        "Link": "https://cosi.org/"
+    },
+    {
+        "Image": "../Img/NMOTUAF.png",
+        "Name": "National Museum of the US Air Force",
+        "Link": "https://www.nationalmuseum.af.mil/"
+    },
+    {
+        "Image": "../Img/ColsZooLogo.png",
+        "Name": "Columbus Zoo and Aquarium",
+        "Link": "https://www.columbuszoo.org/"
+    },
+    {
+        "Image": "../Img/Kings.jpg",
+        "Name": "Kings Island",
+        "Link": "https://www.visitkingsisland.com/"
+    },
+    {
+        "Image": "../Img/Queen-City-Underground-Tour-in-Cincinnati-Cover.jpg",
+        "Name": "Ultimate Queen City Underground Tour",
+        "Link": "https://www.americanlegacytours.com/ultimate-underground"
+    },
+    {
+        "Image": "../Img/Rock-Hall.jpg",
+        "Name": "Rock & Roll Hall of Fame",
+        "Link": "https://rockhall.com/"
+    },
+    {
+        "Image": "../Img/ClevelandMuseum_exterior.jpg",
+        "Name": "Cleveland Museum of Art",
+        "Link": "https://www.clevelandart.org/"
+    }
+  ]
+}

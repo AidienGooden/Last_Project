@@ -51,12 +51,5 @@
             "Name": "The Lox",
             "Link": "https://www.theloxbagelshop.com/new-page"
         }
-    ],
-    "Hotels": [
-        {
-            "Image": "../Img/logoLEVEQUE - Copy.png",
-            "Name": "Hotel LeVeque, Autograph Collection",
-            "Link": "https://www.hotellevequecolumbus.com/"
-        }
     ]
 }
