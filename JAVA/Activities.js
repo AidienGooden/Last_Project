@@ -49,7 +49,7 @@ menuList.style.height = "0px";
 function toggleMenu() {
   let menuList = document.getElementById("menuList")
   if (menuList.style.height == "0px") {
-    menuList.style.height = "400px";
+    menuList.style.height = "500px";
   }
   else {
     menuList.style.height = "0px";
@@ -75,18 +75,63 @@ xhr.onload = function () {
     //and data to add to the "card" on the webpage
 
     for (let i = 0; i < responseObject.Activities.length; i++) {
-        newCard += "<li class ='Activities' style='width:530px'>"
+      newCard += "<li class ='Activities' style='width:560px'>"
         newCard += "<a href='" + responseObject.Activities[i].Link + "'>"
         //put anchor tag for the href of site linking to
-        newCard += "<img  style='height: 200px; width: 300px; cover/center'src='" + responseObject.Activities[i].Image + "'>"
+        newCard += "<img  style='height: 200px; width: 260px; cover/center'src='" + responseObject.Activities[i].Image + "'>"
         newCard += "<h3>" + responseObject.Activities[i].Name + "</h3>"
         newCard += "</a>"
         newCard += "</li>"
       }
       document.getElementById('content_Activities').innerHTML += newCard
-    
+
   }
 }
 xhr.open('GET', '../JAVA/Activities.Json', true)
 //send the request--  argument and send will always be(null)
 xhr.send(null)
+/******************************************************************************* */
+const gallery = document.querySelector('.gallery');
+const track = document.querySelector('.gallery-track');
+const cards = document.querySelectorAll('.card');
+const easing = 0.05;
+let startY = 0;
+let endY = 0;
+let raf;
+
+const lerp = (start,end,t) => start * (1-t) + end * t;
+
+function updateScroll() {
+  startY = lerp(startY,endY,easing);
+  gallery.style.height = `${track.clientHeight}px`;
+  track.style.transform = `translateY(-${startY}px)`;
+  activateParallax();
+  raf = requestAnimationFrame(updateScroll);
+  if (startY.toFixed(1) === window.scrollY.toFixed(1)) cancelAnimationFrame(raf);
+}
+
+function startScroll() {
+  endY = window.scrollY; 
+  cancelAnimationFrame(raf);
+  raf = requestAnimationFrame(updateScroll);
+}
+
+function parallax(card) {
+  const wrapper = card.querySelector('.card-image-wrapper');
+  const diff = card.offsetHeight - wrapper.offsetHeight;
+  const {top} = card.getBoundingClientRect();
+  const progress = top / window.innerHeight;
+  const yPos = diff * progress;
+  wrapper.style.transform = `translateY(${yPos}px)`;
+}
+
+const activateParallax = () => cards.forEach(parallax);
+
+function init() {
+  activateParallax();
+  startScroll();
+}
+
+window.addEventListener('load',updateScroll,false);
+window.addEventListener('scroll',init,false);
+window.addEventListener('resize',updateScroll,false);

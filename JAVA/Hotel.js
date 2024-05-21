@@ -78,7 +78,7 @@ xhr.onload = function () {
         newCard += "<li class ='Activities' style='width:530px'>"
         newCard += "<a href='" + responseObject.Hotel[i].Link + "'>"
         //put anchor tag for the href of site linking to
-        newCard += "<img  style='height: 210px; width: 280px; cover/center'src='" + responseObject.Hotel[i].Image + "'>"
+        newCard +=  "<img  style='height: 200px; width: 300px; cover/center'src='" + responseObject.Hotel[i].Image + "'>"
         newCard += "<h3>" + responseObject.Hotel[i].Name + "</h3>"
         newCard += "</a>"
         newCard += "</li>"

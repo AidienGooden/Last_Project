@@ -66,7 +66,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 125px;
+  width: 105px;
   text-decoration: none;
   height: 100%;
   transition: all 0.3s ease;
@@ -293,15 +293,16 @@ img {
   font: 16px / 24px "Rubik", sans-serif;
   color: var(--black);
   background: var(--platinum);
-  margin: 50px 0;
+  margin: 0 0;
   margin-top: 0;
+  padding-bottom: 0%;
 }
 
 .Activities_body_Fun {
   font: 16px / 24px "Rubik", sans-serif;
   color: var(--black);
   background: var(--platinum);
-  margin: 50px 0;
+  margin: 0 0;
   margin-top: 0;
   overflow-x: hidden;
 }
@@ -310,7 +311,7 @@ img {
   font: 16px / 24px "Rubik", sans-serif;
   color: var(--black);
   background: var(--platinum);
-  margin: 50px 0;
+  margin: 0 0;
   margin-top: 0;
   overflow-x: hidden;
 }
@@ -319,7 +320,7 @@ img {
   font: 16px / 24px "Rubik", sans-serif;
   color: var(--black);
   background: var(--platinum);
-  margin: 50px 0;
+  margin: 0 0;
   margin-top: 0;
   overflow-x: hidden;
 }
@@ -365,9 +366,6 @@ body {
   scroll-snap-align: start;
   transition: all 0.2s;
 }
-html{
-  height: 1400px;
-}
 
 
 .Activities:not(:last-child) {
@@ -375,7 +373,7 @@ html{
 }
 
 .Activities h3 {
-  color: #c00424;
+  color: #000000;
 }
 
 .Activities:hover {
@@ -428,7 +426,7 @@ html{
 }
 
 .cards::-webkit-scrollbar {
-  height: 12px;
+  height: 10px;
 }
 
 .cards::-webkit-scrollbar-thumb,
@@ -472,6 +470,13 @@ html{
   .Activities:not(:last-child) {
     margin-right: 40px;
   }
+  .cards{
+    margin-bottom: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+ 
+  
 }
 
 /***HOME PAGE****************************************************************************/
@@ -488,18 +493,13 @@ html{
 }
 
 .District_1 {
-  width: 800px;
-  height: 550px;
+  width: 70vw;
+  aspect-ratio: 2266/1275;
+  position: relative;
+  background: url("../Img/New.webp");
+  background-size: contain;
 }
 
-.mobile-container {
-  max-width: 480px;
-  margin: auto;
-  background-color: #555;
-  height: 500px;
-  color: white;
-  border-radius: 10px;
-}
 
 
 
@@ -549,14 +549,25 @@ p {
 img {
   width: 100%;
 }
+.beauty_para{
+  margin-top: 35px;
+  text-align: center;
+  font-size: 25px;
+}
+.beauty{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 60px;
+  color: #c00424;
+}
 
 .showcase_Restaurant {
-  margin-top: -10px;
-  margin-bottom: 40px;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  background: url("../Img/Foodiev2.jpg") center/cover;
+  width: 100vw;
+    aspect-ratio: 4608/2592;
+    position: relative;
+    background: url("../Img/Foodiev2.jpg");
+    background-size: contain;
+    margin-top: -9px;
 }
 
 .showcase {
@@ -575,6 +586,7 @@ img {
   height: 100vh;
   position: relative;
   background: url("../Img/Carry.jpg") center/cover;
+  
 }
 
 
@@ -593,10 +605,13 @@ img {
 }
 
 .showcase_Fun {
+
+  margin-top: -10px;
+  margin-bottom: 40px;
   width: 100%;
-  height: 93vh;
+  height: 140vh;
   position: relative;
-  background: url("../Img/chelsea-vs-Man-City.jpg") center/cover;
+  background: url("../Img/chelsea-vs-Man-City.jpg")  center/cover;
 }
 
 
@@ -704,30 +719,32 @@ tabs.container {
   padding: 3rem 0;
 }
 
-.mobile-container {
-  max-width: 480px;
-  margin: auto;
-  background-color: #555;
-  height: 500px;
-  color: white;
-  border-radius: 10px;
+.footer_container_Fun{
+  background-color: #131313;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
 }
+
+
 .footer_container{
   background-color: #131313;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 20px;
 }
 .footer_links{
   width:100%; 
   max-width:1000px;
   display:flex;
   justify-content: center;
+  margin-left: 40px;
 }
-.footer_link_wrapper{
-  display:flex;
-}
+
 .footer_link_items{
   display:flex;
   flex-direction: column;
@@ -836,7 +853,7 @@ tabs.container {
   margin: auto;
   overflow: hidden;
   padding: 0 2rem;
-  width: 825px;
+  width: 700px;
   max-width: 1400px;
   padding: 0 15px;
   margin: 0 auto;
@@ -850,7 +867,8 @@ nav {
   justify-content: space-between;
   background: #000000;
   position: relative;
-  height: 70px;
+  height: 80px;
+  text-align: center;
 }
 
 .logo {
@@ -921,6 +939,7 @@ nav ul li a {
 }
 
 .footer_link_wrapper{
+  display:flex;
   flex-direction: row;
   grid-template-columns:  1fr 1fr;
 }
@@ -947,6 +966,7 @@ nav ul li a {
   padding-bottom: 0;
   margin-top: 100px;
   margin-bottom: 35px;
+  text-align: center;
 }
 
 .Showcase_Bus {
@@ -976,6 +996,7 @@ nav ul li a {
   padding-bottom: 0;
   margin-top: 10px;
   margin-bottom: 35px;
+  text-align: center;
 }
 
 .card_Cota .card_image {
@@ -1030,6 +1051,44 @@ nav ul li a {
 .title-black {
   color: black;
 }
+/****BEAUTIFUL PAGE*****************************************************************************/
+
+.gallery-track {
+  position: fixed;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 0.25rem;
+  padding: 0.25rem;
+  will-change: transform;
+}
+
+.card {
+  height: 400px;
+  overflow: hidden;
+
+  & .card-image-wrapper {
+    height: 135%;
+    will-change: transform;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+} 
+
+@media (width < 800px) {
+  .gallery-track {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (width < 550px) {
+  .gallery-track {
+    grid-template-columns: repeat(1,1fr);
+  }
+}
 
 @media all and (max-width: 1000px) {
   .card-list {
@@ -1037,13 +1096,17 @@ nav ul li a {
     flex-direction: column;
 
   }
+  .footer_link_wrapper {
+    flex-direction: column;
+   margin-left: 150px;
+}
 
   .card_Cota .card_image img {
     margin-top: -10px;
     margin-bottom: 40px;
     width: 100%;
     border-radius: 40px;
-    height: 45vh;
+    height: 46vh;
     position: relative;
   }
 
@@ -1105,7 +1168,7 @@ nav ul li a {
   }
 
   .Home_wide {
-    margin-left: 100px;
+    margin-left: 50px;
     margin-right: auto;
     color: #c00424;
     padding-bottom: 0;
@@ -1113,22 +1176,24 @@ nav ul li a {
   }
 
   .Wide {
-    margin-left: 40px;
+    margin-left: -15px;
     margin-right: auto;
-    width: 400px;
+    width: 450px;
     color: #c00424;
     padding-bottom: 0;
     margin-top: 10px;
   }
 
   .District_1 {
-    margin-left: -350px;
-    width: 100%;
-    height: 80vh;
+    width: 150vw;
+    aspect-ratio: 2266/1275;
+    position: relative;
+    background: url("../Img/New.webp");
+    background-size: contain;
   }
 
   .Home_wide2 {
-    margin-left: 100px;
+    margin-left: 50px;
     margin-right: auto;
     color: #c00424;
     padding-bottom: 0;
@@ -1168,14 +1233,16 @@ nav ul li a {
 
 }
 
-@media (max-height: 600px) {
+@media (max-height: 1000px) {
   .showcase-content {
     margin-top: 3rem;
   }
 }
 
 @media screen and (max-width:1000px) {
-
+  .container{
+    width: 410px;
+  }
   /*Responsive Styling for Navbar*/
   .navbar_container {
     display: flex;
@@ -1199,7 +1266,7 @@ nav ul li a {
   }
 
   .navbar_menu.active {
-    background: #ebe8e8;
+    background: #ffffff;
     top: 100%;
     opacity: 1;
     transition: all .3s ease;
@@ -1243,15 +1310,23 @@ nav ul li a {
     right: 5%;
     transform: translate(5%, 20%);
   }
+  .Hotel_H1 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #c00424;
+  }
 
   .navbar_toggle .bar {
     width: 25px;
-    height: 4px;
+    height: 10px;
     margin: 5px auto;
     transition: all .5s ease-in-out;
     display: block;
     cursor: pointer;
-    background: #fff;
+    background: #ffffff;
   }
 
   #mobile-menu.is-active .bar:nth-child(2) {
@@ -1265,5 +1340,36 @@ nav ul li a {
   #mobile-menu.is-active .bar:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
   }
-
+  .showcase_Fun {
+    width: 100vw;
+    height: 30vh;
+  }
+  .Header_Hotel {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #c00424;
+  }
+  .social_media_wrapper {
+    flex-direction: column;
+}
+.Header_Food{
+  text-align: center;
+  font-size: 35px;
+}
+.beauty_para{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.beauty{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 45px;
+  color: #c00424;
+}
 }
