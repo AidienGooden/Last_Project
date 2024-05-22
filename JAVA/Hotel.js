@@ -49,7 +49,7 @@ menuList.style.height = "0px";
 function toggleMenu() {
   let menuList = document.getElementById("menuList")
   if (menuList.style.height == "0px") {
-    menuList.style.height = "400px";
+    menuList.style.height = "500px";
   }
   else {
     menuList.style.height = "0px";
@@ -75,10 +75,10 @@ xhr.onload = function () {
     //and data to add to the "card" on the webpage
 
     for (let i = 0; i < responseObject.Hotel.length; i++) {
-        newCard += "<li class ='Activities' style='width:530px'>"
+        newCard += "<li class ='Activities'style='width:560px'>"
         newCard += "<a href='" + responseObject.Hotel[i].Link + "'>"
         //put anchor tag for the href of site linking to
-        newCard +=  "<img  style='height: 200px; width: 300px; cover/center'src='" + responseObject.Hotel[i].Image + "'>"
+        newCard +=  "<img  style='height: 200px; width: 260px; cover/center'src='" + responseObject.Hotel[i].Image + "'>"
         newCard += "<h3>" + responseObject.Hotel[i].Name + "</h3>"
         newCard += "</a>"
         newCard += "</li>"

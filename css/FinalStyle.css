@@ -61,6 +61,11 @@
   height: 80px;
 }
 
+.flag {
+  width: 100px;
+  height: 70px;
+}
+
 .navbar_link {
   color: #fff;
   display: flex;
@@ -324,10 +329,6 @@ img {
   margin-top: 0;
   overflow-x: hidden;
 }
-
-
-
-
 body {
   background-color: #fff3f3;
 }
@@ -356,15 +357,7 @@ body {
 }
 
 #Activities {
-  display: flex;
-  flex-direction: column;
-  flex: 0 0 100%;
-  padding: 20px;
-  background: var(--white);
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
-  scroll-snap-align: start;
-  transition: all 0.2s;
+  width: 560px
 }
 
 
@@ -399,16 +392,18 @@ body {
 #content {
   margin: 25px;
   font-size: 25px;
-  
+  margin-left: 80px;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
 }
+
 #content_Hotel {
   margin: 25px;
   font-size: 25px;
-  
+  margin-left: 80px;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
+
 }
 
 .Activities .card-link {
@@ -442,42 +437,7 @@ body {
   background: var(--thumb);
 }
 
-@media (min-width: 500px) {
-  .Activities {
-    flex-basis: calc(50% - 10px);
-  }
 
-  .Activities:not(:last-child) {
-    margin-right: 20px;
-  }
-}
-
-@media (min-width: 700px) {
-  .Activities {
-    flex-basis: calc(calc(100% / 3) - 20px);
-  }
-
-  .Activities:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
-@media (min-width: 1100px) {
-  .Activities {
-    flex-basis: calc(25% - 30px);
-  }
-
-  .Activities:not(:last-child) {
-    margin-right: 40px;
-  }
-  .cards{
-    margin-bottom: auto;
-    margin-right: auto;
-    width: 100%;
-  }
- 
-  
-}
 
 /***HOME PAGE****************************************************************************/
 :root {
@@ -549,12 +509,14 @@ p {
 img {
   width: 100%;
 }
-.beauty_para{
+
+.beauty_para {
   margin-top: 35px;
   text-align: center;
   font-size: 25px;
 }
-.beauty{
+
+.beauty {
   margin-top: 30px;
   text-align: center;
   font-size: 60px;
@@ -563,11 +525,11 @@ img {
 
 .showcase_Restaurant {
   width: 100vw;
-    aspect-ratio: 4608/2592;
-    position: relative;
-    background: url("../Img/Foodiev2.jpg");
-    background-size: contain;
-    margin-top: -9px;
+  aspect-ratio: 4608/2592;
+  position: relative;
+  background: url("../Img/Foodiev2.jpg");
+  background-size: contain;
+  margin-top: -9px;
 }
 
 .showcase {
@@ -586,18 +548,16 @@ img {
   height: 100vh;
   position: relative;
   background: url("../Img/Carry.jpg") center/cover;
-  
+
 }
 
 
 .Fun_h2 {
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: #0617b3;
-  font-size: 35px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: 500px;
+  font-size: 40px;
+  text-align: center;
 }
 
 .Manchester {
@@ -611,7 +571,7 @@ img {
   width: 100%;
   height: 140vh;
   position: relative;
-  background: url("../Img/chelsea-vs-Man-City.jpg")  center/cover;
+  background: url("../Img/chelsea-vs-Man-City.jpg") center/cover;
 }
 
 
@@ -719,7 +679,7 @@ tabs.container {
   padding: 3rem 0;
 }
 
-.footer_container_Fun{
+.footer_container_Fun {
   background-color: #131313;
   display: flex;
   justify-content: center;
@@ -729,7 +689,7 @@ tabs.container {
 }
 
 
-.footer_container{
+.footer_container {
   background-color: #131313;
   display: flex;
   justify-content: center;
@@ -737,42 +697,50 @@ tabs.container {
   flex-direction: column;
   margin-top: 20px;
 }
-.footer_links{
-  width:100%; 
-  max-width:1000px;
-  display:flex;
+
+.footer_links {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
   justify-content: center;
   margin-left: 40px;
 }
 
-.footer_link_items{
-  display:flex;
+.footer_link_items {
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin:16px;
+  margin: 16px;
   text-align: left;
-  width:16rem;
+  width: 16rem;
   box-sizing: border-box;
 }
-.footer_link_items h2{
-  color:#fff; 
-  margin-bottom: 1rem; /*margin: 0 0 1rem 0;*/
+
+.footer_link_items h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+  /*margin: 0 0 1rem 0;*/
 }
-.footer_link_items a{
-  color:#fff;
+
+.footer_link_items a {
+  color: #fff;
   text-decoration: none;
   margin-bottom: .5rem;
   transition: .3s ease-out;
 }
-.footer_link_items a:hover{
-  color:#833ab4;
+
+.footer_link_items a:hover {
+  color: #833ab4;
   transition: .3s ease-out;
 }
-.social_media{
+
+.social_media {
   max-width: 1000px;
   width: 100%;
+  margin-bottom: 20px;
 }
-.social_media_wrapper{
+
+.social_media_wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -780,32 +748,38 @@ tabs.container {
   width: 90%;
   margin: 40px auto 0 auto;
 }
-#footer_logo{
-  color:#fff;
+
+#footer_logo {
+  color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
   font-size: 2rem;
   cursor: pointer;
 }
-.website_rights{
-  color:#fff;
+
+.website_rights {
+  color: #fff;
 }
-.social_media_icons{
+
+.social_media_icons {
   display: flex;
   justify-content: space-between;
-  align-items:center;
-  width: 240px; 
+  align-items: center;
+  width: 240px;
 }
-.social_media_icons a{
+
+.social_media_icons a {
   transition: .3s ease-out;
 }
-.social_media_link{
-  color:#fff;
+
+.social_media_link {
+  color: #fff;
   font-size: 24px;
 }
-.social_media_icons a:hover{
-  color:#833ab4;
+
+.social_media_icons a:hover {
+  color: #833ab4;
   transform: scale(2);
   transition: .3s ease-out;
 }
@@ -899,51 +873,13 @@ nav ul li a {
   font-size: 30px;
 }
 
-@media (max-width:1000px) {
-  nav ul {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    text-align: center;
-    background: #000000;
-    gap: 0;
-    overflow: hidden;
-  }
-
-  nav ul li {
-    padding: 20px;
-    padding-top: 0;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  #menuList {
-    position: absolute;
-    z-index: 999;
-    transition: all 0.5s;
-  }
-
-  .Fun_h2 {
-    margin-left: 60px;
-    width: 600px;
-    font-size: 30px;
-  }
-
-  .card_7 {
-    width: 400px;
-  }
-}
-
-.footer_link_wrapper{
-  display:flex;
+.footer_link_wrapper {
+  display: flex;
   flex-direction: row;
-  grid-template-columns:  1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
-.footer_links{
+
+.footer_links {
   padding-top: 1rem;
 }
 
@@ -975,6 +911,7 @@ nav ul li a {
   height: 100vh;
   position: relative;
   background: url("../Img/Bus.jfif") center/cover;
+  zoom: 5px;
 
 }
 
@@ -1051,12 +988,13 @@ nav ul li a {
 .title-black {
   color: black;
 }
+
 /****BEAUTIFUL PAGE*****************************************************************************/
 
 .gallery-track {
   position: fixed;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 0.25rem;
   padding: 0.25rem;
   will-change: transform;
@@ -1076,46 +1014,84 @@ nav ul li a {
       object-fit: cover;
     }
   }
-} 
+}
 
 @media (width < 800px) {
   .gallery-track {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (width < 550px) {
   .gallery-track {
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
-@media all and (max-width: 1000px) {
+/****1000px**********************************************************/
+@media (max-width:1000px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    background: #000000;
+    gap: 0;
+    overflow: hidden;
+  }
+
+  nav ul li {
+    padding: 20px;
+    padding-top: 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  #menuList {
+    position: absolute;
+    z-index: 999;
+    transition: all 0.5s;
+  }
+
+  .Fun_h2 {
+    text-align: center;
+    width: 490px;
+    font-size: 30px;
+  }
+
+  .card_7 {
+    width: 400px;
+  }
+
   .card-list {
     /* On small screens, we are no longer using row direction but column */
     flex-direction: column;
 
   }
+
   .footer_link_wrapper {
     flex-direction: column;
-   margin-left: 150px;
-}
+    margin-left: 30px;
+  }
 
   .card_Cota .card_image img {
     margin-top: -10px;
     margin-bottom: 40px;
     width: 100%;
     border-radius: 40px;
-    height: 46vh;
+    height: 53vh;
     position: relative;
   }
 
   .Cota_Header {
-    margin-left: auto;
-    margin-right: auto;
     color: #c00424;
-    padding-bottom: 0;
     margin-top: 10px;
+    text-align: center;
+    width: 400px;
   }
 
   .h1_cota {
@@ -1127,14 +1103,12 @@ nav ul li a {
     margin-top: 100px;
     margin-bottom: 35px;
   }
-}
 
-/**************************************************************/
-@media (max-width: 1000px) {
   .showcase {
     height: 70vh;
   }
-  html{
+
+  html {
     height: 1400px;
   }
 
@@ -1157,10 +1131,10 @@ nav ul li a {
     font-size: 1.5rem;
   }
 
-}
-
-@media (max-width: 1000px) {
-  .showcase::after {}
+  .showcase::after {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
 
   .showcase-content h1 {
     font-size: 2.5rem;
@@ -1168,15 +1142,21 @@ nav ul li a {
   }
 
   .Home_wide {
-    margin-left: 50px;
-    margin-right: auto;
+    margin-left: 15px;
+    text-align: center;
     color: #c00424;
     padding-bottom: 0;
     margin-top: 10px;
   }
 
+  .Mayor {
+    width: 400px;
+    margin-left: 35px;
+    border-radius: 15px;
+  }
+
   .Wide {
-    margin-left: -15px;
+    margin-left: 25px;
     margin-right: auto;
     width: 450px;
     color: #c00424;
@@ -1231,18 +1211,14 @@ nav ul li a {
     text-align: center;
   }
 
-}
-
-@media (max-height: 1000px) {
   .showcase-content {
     margin-top: 3rem;
   }
-}
 
-@media screen and (max-width:1000px) {
-  .container{
-    width: 410px;
+  .container {
+    width: 590px;
   }
+
   /*Responsive Styling for Navbar*/
   .navbar_container {
     display: flex;
@@ -1310,6 +1286,7 @@ nav ul li a {
     right: 5%;
     transform: translate(5%, 20%);
   }
+
   .Hotel_H1 {
     text-align: center;
     margin-left: auto;
@@ -1340,10 +1317,23 @@ nav ul li a {
   #mobile-menu.is-active .bar:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
   }
+
   .showcase_Fun {
     width: 100vw;
-    height: 30vh;
+    height: 60vh;
   }
+
+  .Showcase_Bus {
+    width: 105vw;
+    height: 80vh;
+    zoom: 1.3;
+  }
+
+  .showcase_Restaurant {
+    width: 100vw;
+    height: 40vh;
+  }
+
   .Header_Hotel {
     text-align: center;
     margin-left: auto;
@@ -1352,24 +1342,759 @@ nav ul li a {
     margin-bottom: 20px;
     color: #c00424;
   }
+
   .social_media_wrapper {
     flex-direction: column;
+  }
+
+  .Header_Food {
+    text-align: center;
+    font-size: 35px;
+    margin-right: 40px;
+  }
+
+  .beauty_para {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .beauty {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 45px;
+    color: #c00424;
+  }
 }
-.Header_Food{
-  text-align: center;
-  font-size: 35px;
+
+/*******700px*************************************/
+
+@media (max-width: 700px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    background: #000000;
+    gap: 0;
+    overflow: hidden;
+  }
+
+  nav ul li {
+    padding: 20px;
+    padding-top: 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  #menuList {
+    position: absolute;
+    z-index: 999;
+    transition: all 0.5s;
+  }
+
+  .Fun_h2 {
+    text-align: center;
+    width: 490px;
+    font-size: 30px;
+  }
+
+  .card_7 {
+    width: 400px;
+  }
+
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+
+  }
+
+  .footer_link_wrapper {
+    flex-direction: column;
+    margin-left: 30px;
+  }
+
+  .card_Cota .card_image img {
+    margin-top: -10px;
+    margin-bottom: 40px;
+    width: 100%;
+    border-radius: 40px;
+    height: 53vh;
+    position: relative;
+  }
+
+  .Cota_Header {
+    color: #c00424;
+    margin-top: 10px;
+    text-align: center;
+    width: 400px;
+  }
+
+  .h1_cota {
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    color: #c00424;
+    padding-bottom: 0;
+    margin-top: 100px;
+    margin-bottom: 35px;
+  }
+
+  .showcase {
+    height: 70vh;
+  }
+
+  html {
+    height: 1400px;
+  }
+
+  .hide-sm {
+    display: none;
+  }
+
+  .showcase-top img {
+    top: 30%;
+    left: 5%;
+    transform: translate(0);
+  }
+
+  .showcase-content h1 {
+    font-size: 3.7rem;
+    line-height: 1;
+  }
+
+  .showcase-content p {
+    font-size: 1.5rem;
+  }
+
+  .showcase::after {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+
+  .showcase-content h1 {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+
+  .Home_wide {
+    margin-left: 15px;
+    text-align: center;
+    color: #c00424;
+    padding-bottom: 0;
+    margin-top: 10px;
+  }
+
+  .Mayor {
+    width: 400px;
+    margin-left: 35px;
+    border-radius: 15px;
+  }
+
+  .Wide {
+    margin-left: 25px;
+    margin-right: auto;
+    width: 450px;
+    color: #c00424;
+    padding-bottom: 0;
+    margin-top: 10px;
+  }
+
+  .District_1 {
+    width: 150vw;
+    aspect-ratio: 2266/1275;
+    position: relative;
+    background: url("../Img/New.webp");
+    background-size: contain;
+  }
+
+  .Home_wide2 {
+    margin-left: 50px;
+    margin-right: auto;
+    color: #c00424;
+    padding-bottom: 0;
+    margin-top: 10px;
+  }
+
+  .Wide2 {
+    margin-left: 40px;
+    margin-right: auto;
+    width: 400px;
+    color: #c00424;
+    padding-bottom: 0;
+    margin-top: 10px;
+  }
+
+  .showcase-content p {
+    font-size: 1rem;
+  }
+
+  #tab-1-content .tab-1-content-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  #tab-2-content .tab-2-content-top {
+    display: block;
+    text-align: center;
+  }
+
+  #tab-2-content .tab-2-content-bottom {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    text-align: center;
+  }
+
+  .showcase-content {
+    margin-top: 3rem;
+  }
+
+  .container {
+    width: 590px;
+  }
+
+  /*Responsive Styling for Navbar*/
+  .navbar_container {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    z-index: 1;
+    max-width: 1000px;
+    padding: 0;
+  }
+
+  .navbar_menu {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: -1000px;
+    opacity: 1;
+    transition: all .5s ease;
+    z-index: -1;
+  }
+
+  .navbar_menu.active {
+    background: #ffffff;
+    top: 100%;
+    opacity: 1;
+    transition: all .3s ease;
+    z-index: 99;
+    height: 60vh;
+    font-size: 1.6rem;
+  }
+
+  #navbar_logo {
+    padding-left: 25px;
+  }
+
+  .navbar_item {
+    width: 100%;
+  }
+
+  .navbar_link {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .navbar_button {
+    padding-bottom: 2rem;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    margin: 0;
+  }
+
+  /*mobile styling for JS functionality*/
+  #mobile-menu {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%);
+  }
+
+  .Hotel_H1 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #c00424;
+  }
+
+  .navbar_toggle .bar {
+    width: 25px;
+    height: 10px;
+    margin: 5px auto;
+    transition: all .5s ease-in-out;
+    display: block;
+    cursor: pointer;
+    background: #ffffff;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  .showcase_Fun {
+    width: 100vw;
+    height: 60vh;
+  }
+
+  .Showcase_Bus {
+    width: 105vw;
+    height: 80vh;
+    zoom: 1.3;
+  }
+
+  .showcase_Restaurant {
+    width: 100vw;
+    height: 40vh;
+  }
+
+  .Header_Hotel {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #c00424;
+  }
+
+  .social_media_wrapper {
+    flex-direction: column;
+  }
+
+  .Header_Food {
+    text-align: center;
+    font-size: 35px;
+    margin-right: 40px;
+  }
+
+  .beauty_para {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .beauty {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 45px;
+    color: #c00424;
+  }
 }
-.beauty_para{
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+
+/*****500px*****************************************************/
+@media (max-width: 500px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    background: #000000;
+    gap: 0;
+    overflow: hidden;
+  }
+
+  nav ul li {
+    padding: 20px;
+    padding-top: 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  #menuList {
+    position: absolute;
+    z-index: 999;
+    transition: all 0.5s;
+  }
+
+  .Fun_h2 {
+    text-align: center;
+    width: 490px;
+    font-size: 30px;
+  }
+
+  .card_7 {
+    width: 400px;
+  }
+
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+
+  }
+
+  .footer_link_wrapper {
+    flex-direction: column;
+    margin-left: 30px;
+  }
+
+  .card_Cota .card_image img {
+    margin-top: -10px;
+    margin-bottom: 40px;
+    width: 100%;
+    border-radius: 40px;
+    height: 53vh;
+    position: relative;
+  }
+
+  .Cota_Header {
+    color: #c00424;
+    margin-top: 10px;
+    text-align: center;
+    width: 400px;
+  }
+
+  .h1_cota {
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    color: #c00424;
+    padding-bottom: 0;
+    margin-top: 100px;
+    margin-bottom: 35px;
+  }
+
+  .showcase {
+    height: 70vh;
+  }
+
+  html {
+    height: 1400px;
+  }
+
+  .hide-sm {
+    display: none;
+  }
+
+  .showcase-top img {
+    top: 30%;
+    left: 5%;
+    transform: translate(0);
+  }
+
+  .showcase-content h1 {
+    font-size: 3.7rem;
+    line-height: 1;
+  }
+
+  .showcase-content p {
+    font-size: 1.5rem;
+  }
+
+  .showcase::after {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+
+  .showcase-content h1 {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+
+  .Home_wide {
+    margin-left: 15px;
+    text-align: center;
+    color: #c00424;
+    padding-bottom: 0;
+    margin-top: 10px;
+  }
+
+  .Mayor {
+    width: 400px;
+    margin-left: 35px;
+    border-radius: 15px;
+  }
+
+  .Wide {
+    margin-left: 25px;
+    margin-right: auto;
+    width: 450px;
+    color: #c00424;
+    padding-bottom: 0;
+    margin-top: 10px;
+  }
+
+  .District_1 {
+    width: 150vw;
+    aspect-ratio: 2266/1275;
+    position: relative;
+    background: url("../Img/New.webp");
+    background-size: contain;
+  }
+
+  .Home_wide2 {
+    margin-left: 50px;
+    margin-right: auto;
+    color: #c00424;
+    padding-bottom: 0;
+    margin-top: 10px;
+  }
+
+  .Wide2 {
+    margin-left: 40px;
+    margin-right: auto;
+    width: 400px;
+    color: #c00424;
+    padding-bottom: 0;
+    margin-top: 10px;
+  }
+
+  .showcase-content p {
+    font-size: 1rem;
+  }
+
+  #tab-1-content .tab-1-content-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  #tab-2-content .tab-2-content-top {
+    display: block;
+    text-align: center;
+  }
+
+  #tab-2-content .tab-2-content-bottom {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    text-align: center;
+  }
+
+  .showcase-content {
+    margin-top: 3rem;
+  }
+
+  .container {
+    width: 590px;
+  }
+
+  /*Responsive Styling for Navbar*/
+  .navbar_container {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    z-index: 1;
+    max-width: 1000px;
+    padding: 0;
+  }
+
+  .navbar_menu {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: -1000px;
+    opacity: 1;
+    transition: all .5s ease;
+    z-index: -1;
+  }
+
+  .navbar_menu.active {
+    background: #ffffff;
+    top: 100%;
+    opacity: 1;
+    transition: all .3s ease;
+    z-index: 99;
+    height: 60vh;
+    font-size: 1.6rem;
+  }
+
+  #navbar_logo {
+    padding-left: 25px;
+  }
+
+  .navbar_item {
+    width: 100%;
+  }
+
+  .navbar_link {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .navbar_button {
+    padding-bottom: 2rem;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    margin: 0;
+  }
+
+  /*mobile styling for JS functionality*/
+  #mobile-menu {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%);
+  }
+
+  .Hotel_H1 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #c00424;
+  }
+
+  .navbar_toggle .bar {
+    width: 25px;
+    height: 10px;
+    margin: 5px auto;
+    transition: all .5s ease-in-out;
+    display: block;
+    cursor: pointer;
+    background: #ffffff;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  .showcase_Fun {
+    width: 100vw;
+    height: 60vh;
+  }
+
+  .Showcase_Bus {
+    width: 105vw;
+    height: 80vh;
+    zoom: 1.3;
+  }
+
+  .showcase_Restaurant {
+    width: 100vw;
+    height: 40vh;
+  }
+
+  .Header_Hotel {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #c00424;
+  }
+
+  .social_media_wrapper {
+    flex-direction: column;
+  }
+
+  .Header_Food {
+    text-align: center;
+    font-size: 35px;
+    margin-right: 40px;
+  }
+
+  .beauty_para {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .beauty {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 45px;
+    color: #c00424;
+  }
 }
-.beauty{
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  text-align: center;
-  font-size: 45px;
-  color: #c00424;
+
+@media (min-width: 500px) {
+  .Activities {
+    flex-basis: calc(50% - 10px);
+    width: 300px;
+  }
+
+  .Activities:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .cards {
+    margin-bottom: auto;
+    margin-right: auto;
+    width: 310px;
+    align-items: center;
+    margin-left: 80px;
+  }
 }
+
+@media (min-width: 700px) {
+  .Activities {
+    flex-basis: calc(calc(100% / 3) - 20px);
+  }
+
+  .Activities:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .Activities {
+    flex-basis: calc(25% - 30px);
+  }
+
+  .Activities:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .cards {
+    margin-bottom: auto;
+    margin-right: auto;
+    width: 400px;
+  }
+
+
 }
